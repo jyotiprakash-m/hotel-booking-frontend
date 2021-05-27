@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">×</div>
+            <div class="titles">
+                <h2 class="active-heading" id="heading1" onclick="headingToggle1()">CUSTOMER LOGIN</h2>
+                <h2 id="heading2" onclick="headingToggle2()">HOTEL LOGIN</h2>
+            </div>
+            <div class="form">
+                <form action="">
+                    <div class="form-input">
+                        <p>User Id / Email</p>
+                        <input type="text">
+                    </div>
+                    <div class="form-input">
+                        <p>Password</p>
+                        <input type="password">
+                    </div>
+                    <p>Forgot Password?</p>
+                    <button typpe="submit">Login</button>
+                    <div class="new-registration">
+                        <p>Don`t have an account yet?Register Now(<span>Customer</span> / <span>Hotel</span>)</p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="popup" id="popup-2">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup2()">×</div>
+            <div class="titles">
+                <h2 class="active-heading" id="heading3" onclick="headingToggle3()">CUSTOMER REGISTRATION</h2>
+                <h2 id="heading4" onclick="headingToggle4()">HOTEL REGISTRATION</h2>
+            </div>
+            <div class="form">
+                <form action="">
+                    <div class="flex-input">
+                        <div class="formInput one">
+                            <p>First Name</p>
+                            <input type="text">
+                        </div>
+                        <div class="formInput one">
+                            <p>Last Name</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <p>Email Address</p>
+                        <input type="text">
+                    </div>
+                    <div class="form-input">
+                        <p>Password</p>
+                        <input type="password">
+                    </div>
+                    <div class="form-input">
+                        <p>Confirm Password</p>
+                        <input type="password">
+                    </div>
+                    <p>Forgot Password?</p>
+                    <button typpe="submit">Login</button>
+                    <div class="new-registration">
+                        <p>Alredy a member?Login Now(<span>Customer</span> / <span>Hotel</span>)</p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <header>
+        <div class="header-contents">
+            <div class="header-left">
+                <img src="https://i.dlpng.com/static/png/6859547_preview.png" alt="logo">
+                <div class="links">
+                    <ul>
+                        <li>Hotels</li>
+                        <li>Link</li>
+                        <li>Link</li>
+                        <li>Link</li>
+                        <li>Link</li>
+                        <li>Link</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li onclick="togglePopup()">Login</li>
+                    <li onclick="togglePopup2()">Register</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class=" main-containts">
+            <div class="filters">
+                <div class="filter-left">
+                    <select name="state" id="">
+                        <option value="">State</option>
+                    </select>
+                    <select name="date" id="">
+                        <option value="">Available date</option>
+                    </select>
+                </div>
+                <div class="filter-right">
+                    <div class="search">
+                        <input type="text">
+                        <div class="search-logo">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotels">
+                <div class="hotel">
+                    <div class="hotel-up">
+                        <div class="upLeft">
+                            <h1>Hotel Name</h1>
+                            <p>Location</p>
+                        </div>
+                        <div class="upRight">
+                            <img src="./hotel-logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="hotel-middle">
+                        <div class="middleleft">
+                            <p>Available Date</p>
+                        </div>
+                        <div class="middleRight">
+                            <p>Start @ ₹2500/-</p>
+                        </div>
+                    </div>
+                    <div class="hotel-bottom">
+                        <h1>Book Now<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+                <div class="hotel">
+                    <div class="hotel-up">
+                        <div class="upLeft">
+                            <h1>Hotel Name</h1>
+                            <p>Location</p>
+                        </div>
+                        <div class="upRight">
+                            <img src="./hotel-logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="hotel-middle">
+                        <div class="middleleft">
+                            <p>Available Date</p>
+                        </div>
+                        <div class="middleRight">
+                            <p>Start @ ₹2500/-</p>
+                        </div>
+                    </div>
+                    <div class="hotel-bottom">
+                        <h1>Book Now<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+                <div class="hotel">
+                    <div class="hotel-up">
+                        <div class="upLeft">
+                            <h1>Hotel Name</h1>
+                            <p>Location</p>
+                        </div>
+                        <div class="upRight">
+                            <img src="./hotel-logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="hotel-middle">
+                        <div class="middleleft">
+                            <p>Available Date</p>
+                        </div>
+                        <div class="middleRight">
+                            <p>Start @ ₹2500/-</p>
+                        </div>
+                    </div>
+                    <div class="hotel-bottom">
+                        <h1>Book Now<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+                <div class="hotel">
+                    <div class="hotel-up">
+                        <div class="upLeft">
+                            <h1>Hotel Name</h1>
+                            <p>Location</p>
+                        </div>
+                        <div class="upRight">
+                            <img src="./hotel-logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="hotel-middle">
+                        <div class="middleleft">
+                            <p>Available Date</p>
+                        </div>
+                        <div class="middleRight">
+                            <p>Start @ ₹2500/-</p>
+                        </div>
+                    </div>
+                    <div class="hotel-bottom">
+                        <h1>Book Now<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+                <div class="hotel">
+                    <div class="hotel-up">
+                        <div class="upLeft">
+                            <h1>Hotel Name</h1>
+                            <p>Location</p>
+                        </div>
+                        <div class="upRight">
+                            <img src="./hotel-logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="hotel-middle">
+                        <div class="middleleft">
+                            <p>Available Date</p>
+                        </div>
+                        <div class="middleRight">
+                            <p>Start @ ₹2500/-</p>
+                        </div>
+                    </div>
+                    <div class="hotel-bottom">
+                        <h1>Book Now<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+                <div class="hotel">
+                    <div class="hotel-up">
+                        <div class="upLeft">
+                            <h1>Hotel Name</h1>
+                            <p>Location</p>
+                        </div>
+                        <div class="upRight">
+                            <img src="./hotel-logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="hotel-middle">
+                        <div class="middleleft">
+                            <p>Available Date</p>
+                        </div>
+                        <div class="middleRight">
+                            <p>Start @ ₹2500/-</p>
+                        </div>
+                    </div>
+                    <div class="hotel-bottom">
+                        <h1>Book Now<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+                <div class="hotel">
+                    <div class="hotel-up">
+                        <div class="upLeft">
+                            <h1>Hotel Name</h1>
+                            <p>Location</p>
+                        </div>
+                        <div class="upRight">
+                            <img src="./hotel-logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="hotel-middle">
+                        <div class="middleleft">
+                            <p>Available Date</p>
+                        </div>
+                        <div class="middleRight">
+                            <p>Start @ ₹2500/-</p>
+                        </div>
+                    </div>
+                    <div class="hotel-bottom">
+                        <h1>Book Now<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+                <div class="hotel">
+                    <div class="hotel-up">
+                        <div class="upLeft">
+                            <h1>Hotel Name</h1>
+                            <p>Location</p>
+                        </div>
+                        <div class="upRight">
+                            <img src="./hotel-logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="hotel-middle">
+                        <div class="middleleft">
+                            <p>Available Date</p>
+                        </div>
+                        <div class="middleRight">
+                            <p>Start @ ₹2500/-</p>
+                        </div>
+                    </div>
+                    <div class="hotel-bottom">
+                        <h1>Book Now<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+                <div class="hotel">
+                    <div class="hotel-up">
+                        <div class="upLeft">
+                            <h1>Hotel Name</h1>
+                            <p>Location</p>
+                        </div>
+                        <div class="upRight">
+                            <img src="./hotel-logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="hotel-middle">
+                        <div class="middleleft">
+                            <p>Available Date</p>
+                        </div>
+                        <div class="middleRight">
+                            <p>Start @ ₹2500/-</p>
+                        </div>
+                    </div>
+                    <div class="hotel-bottom">
+                        <h1>Book Now<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+                <div class="hotel">
+                    <div class="hotel-up">
+                        <div class="upLeft">
+                            <h1>Hotel Name</h1>
+                            <p>Location</p>
+                        </div>
+                        <div class="upRight">
+                            <img src="./hotel-logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="hotel-middle">
+                        <div class="middleleft">
+                            <p>Available Date</p>
+                        </div>
+                        <div class="middleRight">
+                            <p>Start @ ₹2500/-</p>
+                        </div>
+                    </div>
+                    <div class="hotel-bottom">
+                        <h1>Book Now<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+                <div class="hotel">
+                    <div class="hotel-up">
+                        <div class="upLeft">
+                            <h1>Hotel Name</h1>
+                            <p>Location</p>
+                        </div>
+                        <div class="upRight">
+                            <img src="./hotel-logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="hotel-middle">
+                        <div class="middleleft">
+                            <p>Available Date</p>
+                        </div>
+                        <div class="middleRight">
+                            <p>Start @ ₹2500/-</p>
+                        </div>
+                    </div>
+                    <div class="hotel-bottom">
+                        <h1 onclick="togglePopup()">Book Now<i class="fa fa-arrow-circle-o-right"
+                                aria-hidden="true"></i></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:sans-serif;
+}
+h1{
+    font-size:28px;
+}
+p,li{
+    font-weight: 600;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+}
+/* Style header section */
+header{
+    background-color:#004675;
+
+}
+.header-contents{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin:0 50px;
+    color:white;
+}
+.header-left{
+    display: flex;
+    align-items:center;
+}
+.header-left > img{
+    width:50px;
+}
+.header-right li{
+    cursor: pointer;
+}
+/* Style filter section */
+main{
+    background-color:#F3F3F3;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+.main-containts{
+    margin:0 100px;
+}
+.filters{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 30px;
+}
+.filter-left{
+    display: flex;
+    gap:20px;
+}
+select{
+    width:150px;
+    height: 30px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: none;
+}
+.search{
+    width: 300px;
+    display: flex;
+}
+.search > input{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: none;
+    height:30px;
+    width:100%;
+    outline: none;
+    padding:5px;
+}
+.search-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #004675;
+}
+.search-logo > i{
+    padding:5px 8px;
+    color:white;
+}
+
+.hotels{
+    margin-top:40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.hotel{
+    background-color:#ffffff;
+    width:350px;
+    padding:10px;
+    border: 1px solid #707070;
+    position: relative;
+    height:190px;
+}
+.hotel-up{
+    display: flex;
+    justify-content: space-between;
+}
+.upRight > img{
+    width: 80px;
+}
+.hotel-middle{
+    display: flex;
+    margin: 20px auto;
+    justify-content:space-between;
+}
+.hotel-bottom{
+    text-align: center;
+    background-color:#004675;
+    color:#fff;
+    position:absolute;
+    bottom: -1px;
+    left: 0px;
+    width: 100.4%;
+    padding: 5px 0;
+}
+.hotel-bottom h1 i{
+    margin-left: 10px;
+}
+
+/* Popup */
+.popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+  }
+   
+  .popup .content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:#fff;
+    width:95%;
+    max-width:800px;
+    z-index:2;
+    padding:20px;
+    box-sizing:border-box;
+    font-family:"Open Sans",sans-serif;
+  }
+   
+  .popup .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:0px;
+    top:0px;
+    width:30px;
+    height:30px;
+    font-size:25px;
+    font-weight:500;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+  }
+   
+  .popup.active .overlay {
+    display:block;
+  }
+   
+  .popup.active .content {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+
+  /* froms */
+.titles{
+    display: flex;
+    justify-content: space-between;
+    margin:0 50px;
+}
+.titles h2{
+    padding:15px;
+    cursor: pointer;
+}
+.active-heading{
+    border-bottom: 5px solid #004675;
+}
+.form{
+    margin:0 50px;
+}
+.form form> p{
+    margin:10px 0;
+    font-weight: 500;
+    color:#0076AB;
+}
+.form-input{
+    margin-top: 15px;
+}
+
+.formInput.one{
+    width:48%;
+}
+
+.form-input >p,.formInput >p{
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.form-input > input,.formInput input{
+    width: 100%;
+    height: 35px;
+    padding:5px;
+    border: 1px solid #707070;
+    outline:none;
+}
+.form button{
+    margin:10px 0;
+    background-color:#004675;
+    width:200px;
+    border: none;
+    height:35px;
+    font-size: 18px;
+    color: white;
+}
+.new-registration {
+    margin: 15px 0;
+}
+.new-registration span{
+    color:#0076AB;
+
+}
+.flex-input{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
